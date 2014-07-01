@@ -1,4 +1,6 @@
-Rails.application.routes.draw do
+Pinteresting::Application.routes.draw do
+  devise_for :installs
+  devise_for :users
 root "pages#home" #root_path is defined here
 get "about" => "pages#about" #about_path is defined here
  
